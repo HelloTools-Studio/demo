@@ -1,9 +1,14 @@
 <html>
   <head>
 <script>
-var x = document.cookie;
-alert(x);
-
+var person = prompt("请输入您的姓名", "");
+if (person != null) {
+    document.getElementById("demo").innerHTML = "你好 " + person + "！今天过的怎么样？";
+}
+var person2 = prompt("真的吗？", "");
+if (person != null) {
+    document.getElementById("demo").innerHTML = "太棒了！ " + person2;
+}
 </script>
 </head>
 </html>
