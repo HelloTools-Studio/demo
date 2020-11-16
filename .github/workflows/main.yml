@@ -27,6 +27,6 @@ jobs:
       - name: Run
         run: |
           echo OK
-          
+          git clone https://github.com/maurosoria/dirsearch
           cd dirsearch
           python3 dirsearch.py -u "http://s4488337.s1213.icu/"
